@@ -11,7 +11,7 @@
 .navbarButtonContainer {
   height: 85px;
   flex: 1;
-  max-width: 29.5%;
+  max-width: 700px;
   display: flex;
   position: relative;
   box-sizing: border-box;
@@ -33,13 +33,12 @@
   color: white; /* White text color */
   font-size: 20px; /* Font size */
   height: 100%; /* Button height */
-  width: 100%; /* Button width */
+  width: 200px; /* Button width */
   font-family: "GogaSemibold", sans-serif; /* Custom font family */
   border-radius: 0px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
   display: inline-flex; /* Flexbox for alignment */
   text-align: center; /* Center text horizontally */
-  display: inline-flex; /* Flexbox for alignment */
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
@@ -48,4 +47,16 @@
 button.navButton:hover {
   background-color: #0052cc; /* Darker blue on hover */
   box-shadow: 0 0 10px #0052cc;
+}
+
+button.navButton:active {
+  background-color: #0052cc; /* Darker blue on hover */
+  box-shadow: 0 0 10px #0052cc;
+}
+
+.navbarLogo {
+  position: absolute;
+  top: 10px;
+  scale: 1.1;
+  left: 50px;
 }
