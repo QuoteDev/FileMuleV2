@@ -1,26 +1,51 @@
 .navbarLogoBar {
   background-color: #0052CC;
   height: 85px;
-  width: 30%;
-  min-width: 59.5%;
-  max-width: 100%;
+  flex: 1;
+  max-width: 100%; /* Adjust the max-width to ensure proper alignment */
+  display: flex;
+  padding-left: 20px; /* Add some padding to the left for better spacing */
+  box-sizing: border-box;
 }
 
-.navbarButton {
-  background-color: #0052CC;
+.navbarButtonContainer {
   height: 85px;
-  width: 30.5%;
+  flex: 1;
+  max-width: 29.5%;
+  display: flex;
   position: relative;
-  margin-left: auto; /* Aligns to the right */
-  min-width: 40%;
-  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .navbarContainer {
-  margin: 20px; /* Consistent margin on all sides */
   display: flex;
   flex-direction: row;
-  gap: 12px; /* Gap between navbar items */
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Vertically center the items */
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 12px;
+  padding: 20px;
+}
+
+.navButton {
+  border: 1px solid #0052cc;
+  background-color: transparent;
+  color: white; /* White text color */
+  font-size: 20px; /* Font size */
+  height: 100%; /* Button height */
+  width: 100%; /* Button width */
+  font-family: "GogaSemibold", sans-serif; /* Custom font family */
+  border-radius: 0px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-flex; /* Flexbox for alignment */
+  text-align: center; /* Center text horizontally */
+  display: inline-flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+button.navButton:hover {
+  background-color: #0052cc; /* Darker blue on hover */
+  box-shadow: 0 0 10px #0052cc;
 }

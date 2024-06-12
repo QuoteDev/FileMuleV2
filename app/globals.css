@@ -113,10 +113,11 @@ p {
 
 .empty-item {
   border: 1px solid #0052cc;
-  padding: 20px;
+  padding: 20px; /* Adjust padding as needed, but remember it adds to the total size */
   text-align: center;
-  flex: 1 1 30%;
-  box-sizing: border-box;
+  width: 100%; /* Fill the width */
+  height: 100%; /* Fill the height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .header,
