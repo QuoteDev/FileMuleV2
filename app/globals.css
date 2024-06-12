@@ -1,4 +1,5 @@
 @import 'fonts.css';
+@import './components/navbar.css';
 
 body {
   margin: 0;
@@ -36,10 +37,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
+  width: calc(100% - 700px - 12px); /* Subtract the fixed width of empty-item and gap */
   gap: 20px;
 }
-
 .titlecard {
   text-align: left;
   border: 1px solid #0052cc;
@@ -113,18 +113,17 @@ p {
 
 .empty-item {
   border: 1px solid #0052cc;
-  padding: 20px; /* Adjust padding as needed, but remember it adds to the total size */
+  padding: 20px;
   text-align: center;
-  width: 100%; /* Fill the width */
-  height: 100%; /* Fill the height */
+  width: 864px; /* Set a fixed width */
+  height: 100%;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
-
 .header,
-.features,
-.empty-item {
+.features {
   flex: 1;
 }
+
 
 .feature-item.fast-feature,
 .feature-item.secure-feature {

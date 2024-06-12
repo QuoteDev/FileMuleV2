@@ -10,11 +10,11 @@
 
 .navbarButtonContainer {
   height: 85px;
-  flex: 1;
-  max-width: 700px;
   display: flex;
   position: relative;
   box-sizing: border-box;
+  flex: .8;
+  transition: width 0.3s; /* Add transition for smooth scaling */
 }
 
 .navbarContainer {
@@ -33,7 +33,7 @@
   color: white; /* White text color */
   font-size: 20px; /* Font size */
   height: 100%; /* Button height */
-  width: 200px; /* Button width */
+  width: 100%; /* Button width */
   font-family: "GogaSemibold", sans-serif; /* Custom font family */
   border-radius: 0px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
