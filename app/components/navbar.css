@@ -11,17 +11,16 @@
   height: 85px;
   width: 30.5%;
   position: relative;
-  margin-left: auto; /* Changed from margin-right to margin-left */
+  margin-left: auto; /* Aligns to the right */
   min-width: 40%;
   max-width: 100%;
 }
 
 .navbarContainer {
-  margin: 20px 20px 0 20px;
+  margin: 20px; /* Consistent margin on all sides */
   display: flex;
   flex-direction: row;
-  gap: 12px;
-  justify-content: flex-start; /* Aligns items to the start */
-  justify-content: center;
+  gap: 12px; /* Gap between navbar items */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically center the items */
 }
-
