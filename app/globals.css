@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'fonts.css';
+
+body {
+  margin: 0;
+  font-family: 'GogaRegular', sans-serif;
+  background-color: #0C0F19;
+  color: white;
+}
+
+h1 {
+  font-family: 'GogaSemibold', sans-serif;
+  line-height: 0.85;
+}
+
+h2 {
+  font-family: 'GogaMedium', sans-serif;
+}
+
+p {
+  font-family: 'SatoshiRegular', sans-serif;
+  color: #808080;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  max-width: 100%;
+  gap: 12px;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.header {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #0052cc;
+  width: 100%;
+  padding: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  padding: 0 0 60px 0;
+}
+
+.cta-button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 12px;
+}
+
+.feature-item {
+  border: 1px solid #0052cc;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(33% - 40px);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.feature-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  bottom: auto;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0%;
+  margin: 0 auto;
+  left: 0%;
+  margin: 40px;
+  max-width: 60%;
+}
+
+.feature-description {
+  font-size: 1rem;
+}
+
+.empty-item {
+  border: 1px solid #0052cc;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(33% - 40px);
+  min-width: 40%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.header,
+.features,
+.empty-item {
+  flex: 1;
+}
+
+.feature-item.fast-feature {
+  background-image: url("/images/Fast-Feature_Background.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 612px;
+  position: relative;
+  text-align: left;
+}
+
+.feature-item.secure-feature {
+  background-image: url("/images/Fast-Feature_Background.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 612px;
+  position: relative;
+  text-align: left;
+}
+
+.feature-icon {
+  max-width: 100%;
+  height: auto;
+}

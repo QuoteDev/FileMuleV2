@@ -1,0 +1,51 @@
+/* CSS */
+/* Button styles */
+button.HeaderButton {
+    background-color: #0052CC; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    font-size: 18px; /* Font size */
+    height: 73px; /* Button height */
+    width: 225px; /* Button width */
+    font-family: "GogaSemibold", sans-serif; /* Custom font family */
+    border-radius: 0px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-flex; /* Flexbox for alignment */
+    text-align: center; /* Center text horizontally */
+    display: inline-flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between text and icon */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+/* Icon styles */
+button.HeaderButton .icon {
+    transition: transform 0.3s; /* Smooth transition for icon transform */
+}
+
+/* Hover effect */
+button.HeaderButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+button.HeaderButton:hover .icon {
+    transform: translateX(5px); /* Move icon to the right on hover */
+}
+
+/* Active effect */
+button.HeaderButton:active {
+    background-color: #004494; /* Even darker blue when active */
+    transform: scale(1); /* Reset size when active */
+}
+
+button.HeaderButton:active .icon {
+    transform: translateX(0); /* Reset icon position when active */
+}
+
+/* Optional: Focus effect */
+button.HeaderButton:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+}

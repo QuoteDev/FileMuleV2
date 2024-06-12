@@ -1,0 +1,87 @@
+/* GOGA FONT FAMILY */
+
+@font-face {
+    font-family: 'GogaRegular';
+    src: url('/fonts/Goga/GogaTest-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GogaMedium';
+    src: url('/fonts/Goga/GogaTest-Medium.otf') format('opentype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GogaLight';
+    src: url('/fonts/Goga/GogaTest-Light.otf') format('opentype');
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GogaHairline';
+    src: url('/fonts/Goga/GogaTest-Hairline.otf') format('opentype');
+    font-weight: 100; /* Hairline weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GogaBold';
+    src: url('/fonts/Goga/GogaTest-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GogaBlack';
+    src: url('/fonts/Goga/GogaTest-Black.otf') format('opentype');
+    font-weight: 900; /* Black weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GogaSemibold';
+    src: url('/fonts/Goga/GogaTest-Semibold.otf') format('opentype');
+    font-weight: 600; /* Semibold weight */
+    font-style: normal;
+}
+
+/* SATOSHI FONT FAMILY */
+
+@font-face {
+    font-family: 'SatoshiRegular';
+    src: url('/fonts/Satoshi/Satoshi-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SatoshiMedium';
+    src: url('/fonts/Satoshi/Satoshi-Medium.otf') format('opentype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SatoshiLight';
+    src: url('/fonts/Satoshi/Satoshi-Light.otf') format('opentype');
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SatoshiBold';
+    src: url('/fonts/Satoshi/Satoshi-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SatoshiBlack';
+    src: url('/fonts/Satoshi/Satoshi-Black.otf') format('opentype');
+    font-weight: 900; /* Black weight */
+    font-style: normal;
+}
