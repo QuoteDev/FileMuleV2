@@ -26,7 +26,6 @@ p {
 .container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
   max-width: 100%;
   gap: 12px;
@@ -34,12 +33,12 @@ p {
 }
 
 .content {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(100% - 700px - 12px); /* Subtract the fixed width of empty-item and gap */
+  min-width: 800px; /* Adjust this value to your desired minimum width */
   gap: 20px;
 }
+
 .titlecard {
   text-align: left;
   border: 1px solid #0052cc;
@@ -115,15 +114,26 @@ p {
   border: 1px solid #0052cc;
   padding: 20px;
   text-align: center;
-  width: 864px; /* Set a fixed width */
+  /* Remove fixed width settings to allow for responsiveness */
+  width: 100%; /* Allow the item to fill its container */
+  max-width: 800px; /* Maximum width */
   height: 100%;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box;
 }
+
+@media (max-width: 800px) {
+  .empty-item {
+    /* Adjustments for smaller screens */
+    min-width: 0; /* Allow the item to scale down */
+    width: 100%; /* Full width on smaller screens */
+    flex: 1; /* Allow flexibility in flex containers */
+  }
+}
+
 .header,
 .features {
   flex: 1;
 }
-
 
 .feature-item.fast-feature,
 .feature-item.secure-feature {
