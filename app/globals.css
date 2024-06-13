@@ -1,11 +1,18 @@
 @import 'fonts.css';
 @import './components/navbar.css';
 
+html, body {
+  height: 100%; /* Ensure the full height is available for child elements */
+  margin: 0; /* Remove default margin */
+}
+
 body {
   margin: 0;
   font-family: 'GogaRegular', sans-serif;
   background-color: #0C0F19;
   color: #0c0f19;
+  display: flex;
+  flex-direction: column; /* This ensures that the .container can expand vertically */
 }
 
 h1 {
@@ -30,6 +37,12 @@ p {
   max-width: 100%;
   gap: 12px;
   padding: 20px;
+  height: 100%; /* Ensure the container can expand to the full height of its parent */
+}
+
+.testcontainer {
+  background-color: aqua;
+  min-height: 500px;
 }
 
 .content {
@@ -121,6 +134,12 @@ p {
   box-sizing: border-box;
 }
 
+.empty-item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* This will allow .empty-item to fill the available space */
+}
+
 @media (max-width: 800px) {
   .empty-item {
     /* Adjustments for smaller screens */
@@ -144,4 +163,20 @@ p {
   height: 612px;
   position: relative;
   text-align: left;
+}
+
+@media (max-width: 1720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .empty-item {
+    order: 2;
+    min-width: 100%;
+  }
 }
