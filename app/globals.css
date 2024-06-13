@@ -50,6 +50,7 @@ p {
   justify-content: space-between;
   min-width: 800px; /* Adjust this value to your desired minimum width */
   gap: 20px;
+  column-gap: 20px; /* Vendor prefix for row-gap property */
 }
 
 .titlecard {
@@ -96,6 +97,7 @@ p {
   text-align: center;
   flex: 1 1 calc(50% - 40px);
   box-sizing: border-box;
+  margin: 20px 0 0 0; /* Temp fix because gap is not working for some reason */
 }
 
 .feature-icon {
