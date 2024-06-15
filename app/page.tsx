@@ -6,6 +6,7 @@ import HeaderButton from "@/app/components/headerbutton";
 import Navbar from "@/app/components/navbar";
 import './components/headerbutton.css';
 import './components/navbar.css';
+import Accordion from './components/Accordion';
 
 import React, { CSSProperties } from 'react';
 import SpaceDiv from "./components/space";
@@ -15,6 +16,20 @@ const spaceStyle: CSSProperties & { [key: string]: string | number } = {
 };
 
 export default function Home() {
+  const items = [
+    {
+      title: 'Section 1',
+      content: 'Content for section 1',
+    },
+    {
+      title: 'Section 2',
+      content: 'Content for section 2',
+    },
+    {
+      title: 'Section 3',
+      content: 'Content for section 3',
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -67,6 +82,7 @@ export default function Home() {
         </div>
         <div className="empty-item">
           <h1 className="title">THE CLOUD WITHOUT THE HASSLE</h1>
+          <Accordion items={items} allowMultipleOpen={true} />
         </div>
       </div>
       <div className="testcontainer">

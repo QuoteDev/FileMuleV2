@@ -1,0 +1,33 @@
+/* components/Accordion.module.css */
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+  background-color: #fff;
+}
+
+.content.open {
+  max-height: 200px;
+  padding: 15px;
+}
