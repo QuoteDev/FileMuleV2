@@ -1,5 +1,4 @@
 // pages/index.js or your relevant file
-import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import "./globals.css";
@@ -8,10 +7,20 @@ import Navbar from "@/app/components/navbar";
 import './components/headerbutton.css';
 import './components/navbar.css';
 
+import React, { CSSProperties } from 'react';
+import SpaceDiv from "./components/space";
+
+const spaceStyle: CSSProperties & { [key: string]: string | number } = {
+  '--space': '100px',
+};
+
 export default function Home() {
   return (
     <>
       <Navbar />
+      <div>
+      <SpaceDiv space="100px" />
+      </div>
       <div className="container">
         <div className="content">
           <div className="titlecard">

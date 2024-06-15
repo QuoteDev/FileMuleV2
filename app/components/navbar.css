@@ -24,8 +24,11 @@
   align-items: flex-start;
   justify-content: space-between;
   max-width: 100%;
+  width: 100%;
   gap: 12px;
   padding: 20px;
+  position: fixed; /* Fix the navbar at the top */
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .navButton {
@@ -43,6 +46,7 @@
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+  backdrop-filter: blur(10px);
 }
 
 button.navButton:hover {
